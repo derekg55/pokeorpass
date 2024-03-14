@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import ImageList from './ImageList'
+import Header from './Header'
 
 function App() {
+
+const [yesCount, setYesCount] = useState(0)
+const [totalCount, setTotalCount] = useState(0)
+
+const plusYesCount = () => {
+  setYesCount(prevCount => prevCount + 1)
+  addTotalCount()
+}
+const addTotalCount = () => {
+  setTotalCount(prevCount => prevCount + 1)
+}
+useEffect(() => {
+  document.title = 'Poké or Pass';
+}, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="bg-emerald-50">
+      <Header />
+      <p class="m-2 text-center text-4xl font-bold text-gray-900 dark:text-gray">{totalCount}/151</p>
+      <ImageList onYes ={plusYesCount} yesCount ={yesCount} onNo = {addTotalCount}/>
+      
     </div>
   );
 }
