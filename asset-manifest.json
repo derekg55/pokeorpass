@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.5b8bfe98.css",
-    "main.js": "/react-gh-pages/static/js/main.ccada407.js",
-    "index.html": "/react-gh-pages/index.html",
-    "main.5b8bfe98.css.map": "/react-gh-pages/static/css/main.5b8bfe98.css.map",
-    "main.ccada407.js.map": "/react-gh-pages/static/js/main.ccada407.js.map"
+    "main.css": "/pokeorpass/static/css/main.5b8bfe98.css",
+    "main.js": "/pokeorpass/static/js/main.ccada407.js",
+    "index.html": "/pokeorpass/index.html",
+    "main.5b8bfe98.css.map": "/pokeorpass/static/css/main.5b8bfe98.css.map",
+    "main.ccada407.js.map": "/pokeorpass/static/js/main.ccada407.js.map"
   },
   "entrypoints": [
     "static/css/main.5b8bfe98.css",
